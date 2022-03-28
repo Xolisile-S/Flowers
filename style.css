@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia, serif';
+}
+h1{
+    font-family: 'lucida handwriting';
+    color: #5e1168;
+}
+h2{
+    color: rgb(233, 41, 240);
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(151, 91, 151, 0.7),rgba(151, 91, 151, 0.7)),url(/Images/drawn-flowers.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #97849e;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#5e1168;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #c714c7;
+    background: transparent;
+    color: rgb(206, 40, 221);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.par {
+    font-family: monospace;
+    font-size: 16px;
+}
+.container {
+   width: 100%;
+   height: 150vh;
+   background-image: linear-gradient(rgba(151, 91, 151, 0.7),rgba(151, 91, 151, 0.7)),url(/Images/drawn-flowers.jpg);
+   background-position: center;
+   background-size: cover;
+}
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    color: whitesmoke;
+}
+.col {
+    flex-basis: 50%;
+}
+.colc {
+    flex-basis: 50%;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+.about{
+    width: 188px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: rgb(208, 21, 214);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+span.border{
+    border-left: groove;
+    margin: 10px;
+}
+.fa {padding: 15px;
+    font-size: 30px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 30%;
+    margin: 5px 2px;}
+    .fa:hover {opacity: 0.7;
+    }
+    .fa-instagram {background: #d4b1d1;
+    color: white;}
+    .fa-twitter {background: #d4b1d1;
+    color: white;}
+    .fa-youtube {background: #d4b1d1;
+    color: white;}
+    footer {
+        position: absolute;
+        bottom: -250px;
+        right: 380px;
+        font-family: Georgia, serif;
+    }
+#our{
+    text-align: center;
+    font-size: 40px;
+}
+#info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10px,1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+#info img{
+    width: 100%;
+}
+#info img:hover{
+    border-top-left-radius: 50px;
+}
+.img{
+    box-sizing: border-box;
+    box-shadow: 12px 10px 12px rgba(0,0,0,0.5);
+    box-sizing: 10px;
+}
+.img:hover{
+    box-shadow: none;
+    background-color: #fff;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+button{
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    box-shadow: 12px 10px 12px rgba(0,0,0,0.5)
+}
+span.border {
+	border-left: groove;
+        margin: 10px;
+    }
+    .active {
+        background-color: #9b59b6;
+    }
+.social{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+}
+.contact-form{
+    width: 85%;
+    max-width: 600px;
+    background: #f1f1f1;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: Georgia, serif;
+}
+.contact-form h1{
+    margin-top: 0;
+    font-weight: 200;
+    color: #9b59b6;
+}
+.txtb{
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+.txtb label{
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.txtb input, .txtb textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+.btn{
+    display: block;
+    background: #9b59b6;
+    padding: 14px 0;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+}
+.message{
+    color: #dd91e7;
+}
